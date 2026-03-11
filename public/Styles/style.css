@@ -1,15 +1,171 @@
 :root {
-    --primary-green: #2e7552;
-    --accent-teal: #09898a;
-    --dark-bg: #093d4e;
-    --soft-purple: #484e79;
-    --earth-brown: #503a2c;
-    --text-white: #f0f0f0;
+    --primary: #D4AF37;
+    --accent: #5C4033;
+    --bg: #1A1A1B;
+    --text: #F5F5DC;
   }
+
+ 
   
   body {
-    background-color: var(--dark-bg);
-    color: var(--text-white);
+    background-color: var(--bg);
+    color: var(--text);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    background: linear-gradient(135deg, #121212 0%, #1a1a1b 100%);
   }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 55px;
+    background-color: var(--primary);
+    border-bottom: 2px solid var(--accent);
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--text);
+    font-family: 'Funnel Display', cursive;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    position: relative;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+    gap: 20px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  .nav-links a:hover {
+    color:var(--accent);
+  }
+
+  .logo-letter {
+    display: inline-block;
+    opacity: 0; /* Hidden at start */
+    transform: translateY(10px); /* Start slightly lower */
+    animation: revealLetter 0.5s forwards;
+}
+
+@keyframes revealLetter {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* We add a delay for each letter so they appear one by one */
+.logo-letter:nth-child(1) { animation-delay: 0.1s; }
+.logo-letter:nth-child(2) { animation-delay: 0.2s; }
+.logo-letter:nth-child(3) { animation-delay: 0.3s; }
+.logo-letter:nth-child(4) { animation-delay: 0.4s; }
+.logo-letter:nth-child(5) { animation-delay: 0.5s; }
+.logo-letter:nth-child(6) { animation-delay: 0.6s; }
+.logo-letter:nth-child(7) { animation-delay: 0.7s; }
+.logo-letter:nth-child(8) { animation-delay: 0.8s; }
+.logo-letter:nth-child(9) { animation-delay: 0.9s; }
+.logo-letter:nth-child(10) { animation-delay: 1s; }
+.logo-letter:nth-child(11) { animation-delay: 1.1s; }
+.logo-letter:nth-child(12) { animation-delay: 1.2s; }
+.logo-letter:nth-child(13) { animation-delay: 1.3s; }
+.logo-letter:nth-child(14) { animation-delay: 1.4s; }
+.logo-letter:nth-child(15) { animation-delay: 1.5s; }
+
+/* public/styles/style.css */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh; /* Takes up most of the screen */
+    padding: 0 20px;
+}
+
+.hero-container {
+    max-width: 800px;
+    text-align: center;
+}
+
+.hero-subtitle {
+    color: var(--accent); /* Using your primary color */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 8vw, 4.5rem); /* Responsive font size */
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: #a0aec0; /* A soft gray/slate color */
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--accent);
+    color: var(--bg);
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-outline {
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary:hover, .btn-outline:hover {
+    transform: translateY(-3px); /* Small lift effect */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* public/styles/style.css */
+.hero-socials {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.hero-socials a {
+    color: #a0aec0; /* Soft gray color */
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.hero-socials a:hover {
+    color: var(--accent-main); /* Your gold/teal accent color */
+    transform: translateY(-5px); /* Moves up slightly when hovered */
+}
+
