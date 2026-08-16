@@ -14,6 +14,10 @@
 
     </head>
     <body>
+        <canvas id="bg-canvas"></canvas>
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+
         <nav class="navbar">
             <div class="logo">
                 <span class="logo-letter">E</span>
@@ -28,36 +32,196 @@
                 <span class="logo-letter">.</span>
             </div>
             <div class="nav-links">
+                <a href="#Projects"><i class="fa-solid fa-diagram-project"></i></a>
                 <a href="#Blog"><i class="fa-solid fa-blog"></i></a>
             </div>
             
         </nav>
 
         <section class="hero">
-    <div class="hero-container">
-        <p class="hero-subtitle">Junior Software Developer</p>
-        <h1 class="hero-title">Building digital <span class="highlight">experiences.</span></h1>
-        <p class="hero-description">
-            I specialize in clean code and modern designs. Based in Samsun, 
-            available for global projects.
-        </p>
-        <div class="hero-btns">
+            <div class="spotlight" id="spotlight"></div>
+
             <div class="hero-container">
-    <div class="hero-btns">
-        <a href="#" class="btn-primary">View My Projects</a>
-        <a href="mailto:kocabayramoglu13@gmail.com" target="_blank" class="btn-outline"><i class="fa-solid fa-envelope"></i> Get In Touch</a>
-    </div>
+                <p class="hero-subtitle">Junior Software Developer</p>
+                <h1 class="hero-title">Building digital <span class="highlight">experiences.</span></h1>
+                <p class="hero-description">
+                    I specialize in clean code and modern designs. Based in Samsun, 
+                    available for global projects.
+                </p>
 
-    <div class="hero-socials">
-        <a href="https://github.com/Episode013" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/efecan-k-270b761a9/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="mailto:kocabayramoglu13@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-    </div>
-</div>
-        </div>
-    </div>
-</section>
+                <div class="hero-btns">
+                    <a href="#Projects" class="btn-primary">View My Projects</a>
+                    <a href="mailto:kocabayramoglu13@gmail.com" target="_blank" class="btn-outline"><i class="fa-solid fa-envelope"></i> Get In Touch</a>
+                </div>
 
+                <div class="hero-socials">
+                    <a href="https://github.com/Episode013" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/efecan-kocabayramo%C4%9Flu-125b19429/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/Elamdaelam55" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="mailto:kocabayramoglu13@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <a href="#Projects" class="scroll-indicator" aria-label="Scroll down">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <section class="projects" id="Projects">
+            <div class="projects-container">
+                <p class="section-eyebrow reveal">Selected Work</p>
+                <h2 class="section-title reveal">Projects</h2>
+
+                <div class="project-grid">
+                    <article class="project-card reveal">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="project-title-group">
+                                <h3 class="project-name">samoffers</h3>
+                                <span class="project-visibility">Public</span>
+                            </div>
+                        </div>
+
+                        <p class="project-description">
+                            🚀 SAMOFFER — lightweight proposal &amp; invoice automation tool for local
+                            businesses and tradesmen. Generates professional PDF proposals in seconds
+                            and shares them instantly via WhatsApp.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">FastAPI</span>
+                            <span class="project-tag">SQLite</span>
+                            <span class="project-tag">Jinja2</span>
+                        </div>
+
+                        <a href="https://github.com/Episode013/samoffers" target="_blank" class="project-link">
+                            View on GitHub <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-card-header">
+                            <div class="project-icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="project-title-group">
+                                <h3 class="project-name">Samorganizer</h3>
+                                <span class="project-visibility">Public</span>
+                            </div>
+                        </div>
+
+                        <p class="project-description">
+                            📁 A simple Python file-organizer script that scans a folder and automatically
+                            sorts files into subfolders by type — images, documents, videos, music,
+                            and more — with a one-click Windows shortcut included.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Automation</span>
+                            <span class="project-tag">CLI</span>
+                        </div>
+
+                        <a href="https://github.com/Episode013/Samorganizer" target="_blank" class="project-link">
+                            View on GitHub <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog" id="Blog">
+            <div class="blog-container">
+                <p class="section-eyebrow reveal">Dev Notes</p>
+                <h2 class="section-title reveal">Blog</h2>
+
+                <div class="blog-list">
+                    <article class="blog-post reveal">
+                        <details>
+                            <summary>
+                                <div class="blog-post-summary">
+                                    <span class="blog-post-tag">Project</span>
+                                    <h3 class="blog-post-title">Building SAMOFFER: Proposal &amp; Invoice Automation</h3>
+                                    <p class="blog-post-excerpt">
+                                        A lightweight FastAPI tool I built to help local businesses and
+                                        tradesmen turn a service into a polished, shareable PDF proposal
+                                        in seconds.
+                                    </p>
+                                </div>
+                                <i class="fa-solid fa-chevron-down blog-post-chevron"></i>
+                            </summary>
+
+                            <div class="blog-post-body">
+                                <p>
+                                    SAMOFFER started as a way to cut out the manual, repetitive part of
+                                    writing proposals and invoices for small workshops and tradesmen — typing
+                                    the same layout over and over just to send a quote. The panel runs locally
+                                    and is reachable from any device on the same network, so a proposal can be
+                                    put together from a phone just as easily as a desktop.
+                                </p>
+                                <p>
+                                    Under the hood it's a Python 3.10+ / FastAPI backend served with Uvicorn,
+                                    rendering Jinja2/HTML templates and generating print-ready PDFs with
+                                    XHTML2PDF and ReportLab. Customer and product data lives in a local SQLite
+                                    database, keeping the whole thing dependency-light and easy to run.
+                                </p>
+                                <ul>
+                                    <li>Generates a structured proposal in seconds</li>
+                                    <li>Instant, print-ready PDF output</li>
+                                    <li>Customer &amp; product records stored locally</li>
+                                    <li>Built for sharing straight to WhatsApp</li>
+                                </ul>
+                                <a href="https://github.com/Episode013/samoffers" target="_blank" class="project-link">
+                                    View the repo <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="blog-post reveal">
+                        <details>
+                            <summary>
+                                <div class="blog-post-summary">
+                                    <span class="blog-post-tag">Project</span>
+                                    <h3 class="blog-post-title">Samorganizer: Taming a Messy Downloads Folder</h3>
+                                    <p class="blog-post-excerpt">
+                                        A small Python script born out of a chaotic Downloads folder —
+                                        sorts files into Images, Documents, Videos, Music and more with a
+                                        single double-click.
+                                    </p>
+                                </div>
+                                <i class="fa-solid fa-chevron-down blog-post-chevron"></i>
+                            </summary>
+
+                            <div class="blog-post-body">
+                                <p>
+                                    Samorganizer is a script I wrote after getting tired of digging through
+                                    a Downloads folder full of unsorted files. It scans a target folder and
+                                    moves each file into a subfolder based on its extension — images, PDFs and
+                                    documents, videos, audio, archives, executables, and a catch-all "Others"
+                                    folder for anything unrecognized.
+                                </p>
+                                <p>
+                                    It's pure Python 3 with no external dependencies, so it runs anywhere
+                                    Python does. A bundled <code>.bat</code> file organizes the Downloads
+                                    folder with one double-click on Windows, using the current user's profile
+                                    path so it works without editing anything.
+                                </p>
+                                <ul>
+                                    <li>Sorts by extension into clearly named subfolders</li>
+                                    <li>No third-party libraries required</li>
+                                    <li>One-click Windows shortcut included</li>
+                                    <li>Skips files already inside a matching subfolder on future runs</li>
+                                </ul>
+                                <a href="https://github.com/Episode013/Samorganizer" target="_blank" class="project-link">
+                                    View the repo <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </details>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <script src="public/Styles/script.js"></script>
     </body>
 </html>
